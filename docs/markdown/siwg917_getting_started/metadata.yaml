@@ -1,0 +1,11 @@
+template: "template.typ"
+title: "Installation of the dev environment for the SiWx917-PK6031A dev board"
+author:
+  - name: "Cédric Cyril Hirschi"
+    email: "cehirschi@student.ethz.ch"
+date: "21.03.2024"
+abstract: "This document describes the installation of the development environment for the SiWx917-PK6031A dev board. It is intended for developers who want to work with the SiWx917-PK6031A dev board."
+papersize: "A4"
+section-numbering: "1.1.1"
+toc: true
+toc-depth: 3

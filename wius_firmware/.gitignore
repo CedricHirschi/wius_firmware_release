@@ -1,0 +1,20 @@
+# Build directory
+GNU ARM */
+
+# SDK files
+gecko_sdk_*/
+wiseconnect3_sdk_*/
+
+# Project files
+trashed_modified_files/
+*.html
+
+# VSCode files
+.vscode/
+
+# Eclipse files
+.settings/
+.pdm/
+.uceditor/
+.metadata/
+.projectlinkstore

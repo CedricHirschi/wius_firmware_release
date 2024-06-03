@@ -1,0 +1,58 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: wius_firmware
+label: wius_firmware
+description: |
+  This project contains the main firmware for the WiUS project, part of the TinyProbe device.
+category: Application
+filter:
+  - name: Device Type
+    value: [SoC]
+  - name: MCU
+    value: [32-bit MCU]
+  - name: Project Difficulty
+    value: [Beginner]
+package: platform
+quality: production
+readme:
+  - { path: ../README.md }
+source:
+  - { path: app.c }
+  - { path: main.c }
+include:
+  - path: ""
+    file_list:
+      - { path: app.h }
+sdk: { id: gecko_sdk, version: 4.4.3 }
+toolchain_settings: []
+component:
+  - { from: wiseconnect3_sdk, id: SIWG917M111MGTBA }
+  - { from: wiseconnect3_sdk, id: basic_network_config_manager }
+  - { from: wiseconnect3_sdk, id: brd4338a }
+  - { from: wiseconnect3_sdk, id: bsd_socket }
+  - { from: wiseconnect3_sdk, id: calendar_ulp_component }
+  - { from: wiseconnect3_sdk, id: debug_ulp_component }
+  - { from: wiseconnect3_sdk, id: network_manager }
+  - { from: wiseconnect3_sdk, id: si917_memory_default_config }
+  - { from: wiseconnect3_sdk, id: sl_gpio_peripheral }
+  - { from: wiseconnect3_sdk, id: sl_gspi }
+  - { from: wiseconnect3_sdk, id: sl_power_manager }
+  - { from: wiseconnect3_sdk, id: sl_si91x_asynchronous_socket }
+  - { from: wiseconnect3_sdk, id: sl_si91x_basic_buffers }
+  - { from: wiseconnect3_sdk, id: sl_si91x_internal_stack }
+  - { from: wiseconnect3_sdk, id: sl_ssi }
+  - { from: wiseconnect3_sdk, id: syscalls }
+  - { from: wiseconnect3_sdk, id: timer_ulp_component }
+  - instance: [timer0]
+    from: wiseconnect3_sdk
+    id: ulp_timers_instance
+  - { from: wiseconnect3_sdk, id: wifi }
+  - { from: wiseconnect3_sdk, id: wifi_resources }
+  - { from: wiseconnect3_sdk, id: wiseconnect3_common }
+  - { id: brd4002a }
+  - { id: freertos }
+  - { id: sl_system }
+ui_hints:
+  highlight:
+    - { path: ../README.md, focus: true }
+sdk_extension:
+  - { id: wiseconnect3_sdk, version: 3.2.0 }
