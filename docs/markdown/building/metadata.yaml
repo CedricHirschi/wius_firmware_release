@@ -1,0 +1,11 @@
+template: "template.typ"
+title: "Building guide for the WiUS firmware"
+author:
+  - name: "Cédric Cyril Hirschi"
+    email: "cehirschi@student.ethz.ch"
+date: "03.06.2024"
+abstract: "This document describes the building of the WiUS firmware."
+papersize: "A4"
+section-numbering: "1.1.1"
+toc: true
+toc-depth: 3

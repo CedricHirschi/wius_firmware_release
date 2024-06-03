@@ -19,4 +19,6 @@ Documentation can be found in the [`docs/`](docs/) folder. There you can find
 
 ## Building
 
-See the [Building](docs/markdown/siwg917_getting_started/siwg917_getting_started.md) guide for instructions on how to build the firmware.
+See the [Getting Started](docs/markdown/siwg917_getting_started/siwg917_getting_started.md) guide for instructions on how to get started developing on this platform.
+
+See the [Building](docs/markdown/building.md) guide for instructions on how to build the firmware.
